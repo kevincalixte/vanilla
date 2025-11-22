@@ -31,11 +31,11 @@
 
       <form class="flex flex-col gap-3" action="">
         <input
-          class="w-full p-1.5 bg-white/25 rounded-md"
+          class="w-full p-2 bg-white/25 rounded-md"
           type="search"
           placeholder="Search for a place..."
-        />
-        <button class="w-full p-1.5 bg-[#4657D9] rounded-md">Search</button>
+        /> 
+        <button class="w-full p-2 bg-[#4657D9] rounded-md">Search</button>
       </form>
     </header>
 
@@ -48,13 +48,24 @@
             class="absolute inset-0 flex flex-col items-center justify-evenly"
           >
             <div class="flex flex-col items-center gap-1.5">
-              <h2 class="font-bold text-2xl">Berlin, Germany</h2>
+              <h2 id="ville" class="font-bold text-2xl">
+                Berlin, <span id="pays">Germany</span>
+              </h2>
               <p class="">Tuesday,Aug 5,2025</p>
             </div>
 
             <div class="w-full flex items-center justify-evenly">
-              <img class="max-w-[7rem]" src="assets/img/icon-sunny.webp" alt="" />
-              <p class="font-bricolage text-7xl italic font-semibold">20°</p>
+              <img
+                class="max-w-[7rem]"
+                src="assets/img/icon-sunny.webp"
+                alt=""
+              />
+              <p
+                id="temperature"
+                class="font-bricolage text-7xl italic font-semibold"
+              >
+                20°
+              </p>
             </div>
           </div>
         </div>
